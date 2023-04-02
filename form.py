@@ -111,13 +111,7 @@ class SendMail:
             self.gpasstxt.delete(0,END)
             self.fromtxt.delete(0,END)
     def sendmail_f(self):
-        self.f = self.fromtxt.get()
-        self.t = self.totxt.get()
-        self.msg = self.msgtxt.get("1.0","end-1c")
-        if self.f == "":
-            print(f"{red}Pleas Fill From...")
-            print(f"{red}Error!")
-        else:
+
             if self.t == "":
                 print(f"{red}Please Fill TO...")
                 print(f"{red}Error!")
